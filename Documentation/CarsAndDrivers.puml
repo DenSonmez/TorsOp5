@@ -1,0 +1,19 @@
+@startuml
+class Drivers
+class Cars
+class Main
+
+Cars : -Make
+Cars : -Model
+Cars : -Year
+Cars : - BodyStyle
+
+Drivers : -Name
+Drivers : - Age
+Main *-- Cars: has-a
+Cars *-- Drivers: has-a
+Main*-- Drivers: has-a
+Main *-- Cars: has-a
+
+
+@enduml
